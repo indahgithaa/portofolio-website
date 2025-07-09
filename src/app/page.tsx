@@ -196,14 +196,14 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "DeepGaze",
       description:
-        "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      image: "/placeholder.svg?height=300&width=533",
+        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+      image: "/assets/deepgaze.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["React", "Node.js", "MongoDB"],
-      category: "Website",
+      technologies: ["Flutter", "Tensorflow Lite", "Provider"],
+      category: "Mobile App",
     },
     {
       title: "Weather Dashboard",
@@ -592,9 +592,9 @@ export default function Portfolio() {
             {filteredProjects.map((project, index) => (
               <Card
                 key={index}
-                className="bg-purple-800/30 border-purple-500/30 backdrop-blur-sm hover:bg-purple-700/40 transition-all transform hover:scale-105 overflow-hidden"
+                className="pt-0 bg-purple-800/30 border-purple-500/30 backdrop-blur-sm hover:bg-purple-700/40 transition-all transform hover:scale-105 overflow-hidden"
               >
-                <div className="relative aspect-video">
+                <div className="relative aspect-[16/9] w-full">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
@@ -609,7 +609,7 @@ export default function Portfolio() {
                     </Badge>
                   </div>
                 </div>
-                <CardContent className="p-6 space-y-4">
+                <CardContent className="pb-6 pt-4 space-y-4">
                   <h3 className="text-xl font-semibold text-white">
                     {project.title}
                   </h3>
