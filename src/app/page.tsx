@@ -11,7 +11,6 @@ import {
   Mail,
   MapPin,
   Calendar,
-  Brain,
   ExternalLink,
   Menu,
   X,
@@ -202,57 +201,52 @@ export default function Portfolio() {
       image: "/assets/deepgaze.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Flutter", "Tensorflow Lite", "Provider"],
+      technologies: ["Flutter", "Tensorflow Lite", "Provider", "RestAPI"],
       category: "Mobile App",
     },
     {
-      title: "Weather Dashboard",
+      title: "Includemy",
       description:
-        "A responsive weather dashboard that displays current weather conditions and forecasts using external APIs with beautiful data visualizations.",
-      image: "/placeholder.svg?height=300&width=533",
+        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+      image: "/assets/includemy.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Vue.js", "Chart.js", "API Integration"],
-      category: "Website",
-    },
-    {
-      title: "Social Media Analytics",
-      description:
-        "An analytics platform for social media metrics with interactive charts, data export features, and automated reporting capabilities.",
-      image: "/placeholder.svg?height=300&width=533",
-      demoUrl: "#",
-      githubUrl: "#",
-      technologies: ["Python", "Django", "PostgreSQL"],
-      category: "Website",
-    },
-    {
-      title: "Fitness Tracker Mobile App",
-      description:
-        "A native mobile application for tracking workouts, nutrition, and health metrics with social features and progress analytics.",
-      image: "/placeholder.svg?height=300&width=533",
-      demoUrl: "#",
-      githubUrl: "#",
-      technologies: ["React Native", "Firebase", "Redux"],
+      technologies: ["Flutter", "GetX", "RestAPI"],
       category: "Mobile App",
     },
     {
-      title: "Banking App UI/UX Design",
+      title: "Nusastra",
       description:
-        "Complete UI/UX design system for a modern banking application including user research, wireframes, prototypes, and design system.",
-      image: "/placeholder.svg?height=300&width=533",
+        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+      image: "/assets/nusastra.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Figma", "Adobe XD", "Prototyping"],
-      category: "UI/UX",
+      technologies: ["Flutter", "Bloc", "RestAPI", "OpenAI"],
+      category: "Mobile App",
+    },
+    {
+      title: "Morie",
+      description:
+        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+      image: "/assets/Morie.png",
+      demoUrl: "#",
+      githubUrl: "#",
+      technologies: ["Flutter", "Firebase"],
+      category: "Mobile App",
+    },
+    {
+      title: "TRIPLED",
+      description:
+        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+      image: "/assets/TRIPLED.png",
+      demoUrl: "#",
+      githubUrl: "#",
+      technologies: ["Flutter", "Bloc", "RestAPI", "OpenAI"],
+      category: "Website",
     },
   ];
 
-  const categories = [
-    "All",
-    "Website",
-    "Mobile App",
-    "UI/UX",
-  ];
+  const categories = ["All", "Website", "Mobile App", "UI/UX"];
 
   const filteredProjects =
     activeFilter === "All"
@@ -326,10 +320,7 @@ export default function Portfolio() {
               >
                 Projects
               </a>
-              <a
-                href=""
-                className="hover:text-purple-300 transition-colors"
-              >
+              <a href="" className="hover:text-purple-300 transition-colors">
                 Contact Me
               </a>
             </div>
@@ -370,7 +361,7 @@ export default function Portfolio() {
                   onClick={() => handleNavClick("")}
                   className="text-left hover:text-purple-300 transition-colors"
                 >
-                 Contact Me
+                  Contact Me
                 </button>
               </div>
             </div>
