@@ -109,7 +109,7 @@ export default function Portfolio() {
       category: "Work",
       description: [
         "Mentored over 40 students in Java programming through lectures, hands-on guidance, and assignment support, achieving a 95% student pass rate.",
-        "Organized the students' examination process, including scheduling and coordinating grading procedures, while leading a team of 12 assistants and serving as the main liaison between lab assistants and the professor.",
+        "Organized the students&apos; examination process, including scheduling and coordinating grading procedures, while leading a team of 12 assistants and serving as the main liaison between lab assistants and the professor.",
       ],
     },
     {
@@ -374,7 +374,7 @@ export default function Portfolio() {
         <div className="text-center space-y-8 px-6 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
             <h1 className="text-4xl font-bold mb-6">
-              <span className="font-bold text-white mb-8">Hello, I'm</span>
+              <span className="font-bold text-white mb-8">Hello, I&apos;m</span>
             </h1>
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 min-h-[1.2em]">
               {typedText}
@@ -388,8 +388,8 @@ export default function Portfolio() {
             </h2>
 
             <p className="text-lg md:text-xl text-purple-200 max-w-3xl mx-auto leading-relaxed">
-              I'm an undergraduate computer science student based in Malang,
-              Indonesia. I'm passionate about building useful and meaningful
+              I&apos;m an undergraduate computer science student based in Malang,
+              Indonesia. I&apos;m passionate about building useful and meaningful
               technology that can solve real-world problems.
             </p>
           </div>
@@ -455,12 +455,12 @@ export default function Portfolio() {
 
             <div className="space-y-6">
               <p className="text-lg text-purple-100 leading-relaxed">
-                I'm an undergraduate student majoring in Informatics with
-                current interest in Software Development. I've always been
+                I&apos;m an undergraduate student majoring in Informatics with
+                current interest in Software Development. I&apos;ve always been
                 driven to contribute to the tech-driven society. I work well in
                 both collaborative and individual environments. As I have a firm
-                desire to grow, I'm always eager to expand my skill set and
-                enjoy making new connections with others. I'm actively on the
+                desire to grow, I&apos;m always eager to expand my skill set and
+                enjoy making new connections with others. I&apos;m actively on the
                 lookout for new opportunities to get involved in!
               </p>
 
@@ -683,7 +683,7 @@ export default function Portfolio() {
               {
                 title: "What I value in teammates.",
                 content:
-                  "I value teammates who are collaborative, communicate openly, and aren't afraid to ask questions. I appreciate people who take ownership of their work, are willing to help others, and bring diverse perspectives to problem-solving.",
+                  "I value teammates who are collaborative, communicate openly, and aren&apos;t afraid to ask questions. I appreciate people who take ownership of their work, are willing to help others, and bring diverse perspectives to problem-solving.",
               },
               {
                 title: "What I value in friends.",
@@ -691,19 +691,19 @@ export default function Portfolio() {
                   "Authenticity, loyalty, and a good sense of humor. I cherish friends who challenge me to grow, support me through difficulties, and celebrate successes together. I value deep conversations and shared experiences over surface-level interactions.",
               },
               {
-                title: "What I don't have patience for.",
+                title: "What I don&apos;t have patience for.",
                 content:
-                  "Micromanagement, unnecessary meetings that could be emails, and people who don't respect others' time. I also struggle with perfectionism paralysis - sometimes done is better than perfect, and I'm learning to embrace that philosophy.",
+                  "Micromanagement, unnecessary meetings that could be emails, and people who don&apos;t respect others&apos; time. I also struggle with perfectionism paralysis - sometimes done is better than perfect, and I&apos;m learning to embrace that philosophy.",
               },
               {
                 title: "What people misunderstand about me.",
                 content:
-                  "People often think I'm introverted because I'm thoughtful and deliberate in my responses, but I actually love collaborating and discussing ideas. They might also assume I'm overly serious, but I have a playful side and enjoy creative problem-solving.",
+                  "People often think I&apos;m introverted because I&apos;m thoughtful and deliberate in my responses, but I actually love collaborating and discussing ideas. They might also assume I&apos;m overly serious, but I have a playful side and enjoy creative problem-solving.",
               },
               {
                 title: "How to best communicate with me.",
                 content:
-                  "Be direct and honest - I appreciate straightforward communication. Give me context for decisions and changes. I prefer written communication for complex topics so I can process and respond thoughtfully, but I'm always open to face-to-face discussions for brainstorming.",
+                  "Be direct and honest - I appreciate straightforward communication. Give me context for decisions and changes. I prefer written communication for complex topics so I can process and respond thoughtfully, but I&apos;m always open to face-to-face discussions for brainstorming.",
               },
             ].map((item, index) => (
               <AccordionItem
