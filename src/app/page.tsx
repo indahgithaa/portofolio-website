@@ -449,17 +449,22 @@ export default function Portfolio() {
 
           {/* Add Download CV and Say Hi buttons here */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-500">
-            <Button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-12 py-5 rounded-full transition-all transform hover:scale-105">
+            <a
+              href="https://clips.id/cv-indah-githa"
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-5 py-3 rounded-full transition-all transform hover:scale-105 inline-flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Download className="mr-2" size={20} />
               Download CV
-            </Button>
-            <Button
-              variant="outline"
-              className="border-purple-500/50 text-purple-300 hover:bg-purple-700/50 hover:text-white px-12 py-5 rounded-full bg-transparent transition-all transform hover:scale-105"
+            </a>
+            <a
+              href="mailto:indahgithadev@gmail.com"
+              className="border border-purple-500/50 text-purple-300 hover:bg-purple-700/50 hover:text-white px-4 py-3 rounded-full bg-transparent transition-all transform hover:scale-105 inline-flex items-center"
             >
               <Mail className="mr-2" size={20} />
               Say Hi!
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -776,12 +781,13 @@ export default function Portfolio() {
           </h2>
 
           <div className="max-w-4xl mx-auto">
-
             <div className="grid md:grid-cols-2 gap-8">
               {/* Contact Information */}
               <Card className="bg-purple-800/30 border-purple-500/30 backdrop-blur-sm">
                 <CardContent className="p-8 space-y-6">
-                  <h3 className="text-2xl font-semibold text-white mb-6">Contact</h3>
+                  <h3 className="text-2xl font-semibold text-white mb-6">
+                    Contact
+                  </h3>
 
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4">
@@ -791,7 +797,7 @@ export default function Portfolio() {
                       <div>
                         <p className="text-purple-300 text-sm">Email</p>
                         <a
-                          href="mailto:indahgitha99@gmail.com"
+                          href="mailto:indahgithadev@gmail.com"
                           className="text-white hover:text-purple-300 transition-colors"
                         >
                           indahgithadev@gmail.com
@@ -799,13 +805,16 @@ export default function Portfolio() {
                       </div>
                     </div>
 
- <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-4">
                       <div className="bg-purple-600/50 p-3 rounded-full">
                         <Phone className="text-white" size={20} />
                       </div>
                       <div>
-                        <p className="text-purple-300 text-sm">GitHub</p>
-                        <a href="#" className="text-white hover:text-purple-300 transition-colors">
+                        <p className="text-purple-300 text-sm">WhatsApp</p>
+                        <a
+                          href="#"
+                          className="text-white hover:text-purple-300 transition-colors"
+                        >
                           +6287863533982
                         </a>
                       </div>
@@ -817,11 +826,11 @@ export default function Portfolio() {
                       </div>
                       <div>
                         <p className="text-purple-300 text-sm">Location</p>
-                        <p className="text-white">Malang City, East Java, Indonesia</p>
+                        <p className="text-white">
+                          Malang City, East Java, Indonesia
+                        </p>
                       </div>
                     </div>
-
-                   
                   </div>
                 </CardContent>
               </Card>
@@ -829,11 +838,16 @@ export default function Portfolio() {
               {/* Quick Contact Form */}
               <Card className="bg-purple-800/30 border-purple-500/30 backdrop-blur-sm">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
+                  <h3 className="text-2xl font-semibold text-white mb-6">
+                    Send a Message
+                  </h3>
 
                   <form className="space-y-4">
                     <div>
-                      <label htmlFor="name" className="block text-purple-300 text-sm mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block text-purple-300 text-sm mb-2"
+                      >
                         Name
                       </label>
                       <input
@@ -845,7 +859,10 @@ export default function Portfolio() {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-purple-300 text-sm mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-purple-300 text-sm mb-2"
+                      >
                         Email
                       </label>
                       <input
@@ -857,7 +874,10 @@ export default function Portfolio() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-purple-300 text-sm mb-2">
+                      <label
+                        htmlFor="message"
+                        className="block text-purple-300 text-sm mb-2"
+                      >
                         Message
                       </label>
                       <textarea
