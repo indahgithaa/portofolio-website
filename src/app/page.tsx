@@ -201,13 +201,13 @@ export default function Portfolio() {
       image: "/assets/deepgaze.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Flutter", "Tensorflow Lite", "Provider", "RestAPI"],
+      technologies: ["Flutter", "Provider", "RestAPI", "Tensorflow Lite", "OpenCV"],
       category: "Mobile App",
     },
     {
       title: "Includemy",
       description:
-        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+        "An application that supports people with disabilities in developing skills and finding employment, with features such as mentoring, certification, and job application tools.",
       image: "/assets/includemy.png",
       demoUrl: "#",
       githubUrl: "#",
@@ -217,17 +217,17 @@ export default function Portfolio() {
     {
       title: "Nusastra",
       description:
-        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+        "An application that helps users learn traditional languages through gamification, with features such as NusaSmart, NusaFriend, NusaLingo, and NusaMaps.",
       image: "/assets/nusastra.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Flutter", "Bloc", "RestAPI", "OpenAI"],
+      technologies: ["Flutter", "BLoC", "RestAPI", "OpenAI"],
       category: "Mobile App",
     },
     {
       title: "Morie",
       description:
-        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+       "An application designed to prevent and manage baby blues and postpartum depression, offering features such as access to healthcare providers, community support, journaling, mental and physical wellness tips, and self-care tools.",
       image: "/assets/Morie.png",
       demoUrl: "#",
       githubUrl: "#",
@@ -237,11 +237,21 @@ export default function Portfolio() {
     {
       title: "TRIPLED",
       description:
-        "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
+        "A smart school pickup solution integrated with IP camera and machine learning. It optimizes traffic flow and enhances efficiency, ensuring a smarter, safer experience for students and parents.",
       image: "/assets/TRIPLED.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Flutter", "Bloc", "RestAPI", "OpenAI"],
+      technologies: ["Python", "EasyOCR", "YOLOv8", "Ultralytics", "ONNX", "WebSocket", "HTML & CSS", "JavaScript"],
+      category: "Website",
+    },
+    {
+      title: "SARPRASKU",
+      description:
+        "A web app designed to simplify the process of borrowing facilities and equipment at FILKOM by centralizing submissions, availability checks, and tracking in one platform. SARPRASKU helps both students and staff save time and reduce confusion by offering real-time availability, guided forms, and transparent status updates.",
+      image: "/assets/sarprasku.png",
+      demoUrl: "#",
+      githubUrl: "#",
+      technologies: ["Typescript", "Next.js", "Tailwind", "Shadcn", "Pocketbase"],
       category: "Website",
     },
   ];
@@ -456,7 +466,7 @@ export default function Portfolio() {
             <div className="space-y-6">
               <p className="text-lg text-purple-100 leading-relaxed">
                 I&apos;m an undergraduate student majoring in Informatics with
-                current interest in Software Development. I&apos;ve always been
+                current interest in Software Development and AI/ML. I&apos;ve always been
                 driven to contribute to the tech-driven society. I work well in
                 both collaborative and individual environments. As I have a firm
                 desire to grow, I&apos;m always eager to expand my skill set and
@@ -683,7 +693,7 @@ export default function Portfolio() {
               {
                 title: "What I value in teammates.",
                 content:
-                  "I value teammates who are collaborative, communicate openly, and aren&apos;t afraid to ask questions. I appreciate people who take ownership of their work, are willing to help others, and bring diverse perspectives to problem-solving.",
+                  "I value teammates who are collaborative, communicate openly, and aren't afraid to ask questions. I appreciate people who take ownership of their work, are willing to help others, and bring diverse perspectives to problem-solving.",
               },
               {
                 title: "What I value in friends.",
@@ -691,19 +701,19 @@ export default function Portfolio() {
                   "Authenticity, loyalty, and a good sense of humor. I cherish friends who challenge me to grow, support me through difficulties, and celebrate successes together. I value deep conversations and shared experiences over surface-level interactions.",
               },
               {
-                title: "What I don&apos;t have patience for.",
+                title: "What I don't have patience for.",
                 content:
-                  "Micromanagement, unnecessary meetings that could be emails, and people who don&apos;t respect others&apos; time. I also struggle with perfectionism paralysis - sometimes done is better than perfect, and I&apos;m learning to embrace that philosophy.",
+                  "Micromanagement, unnecessary meetings that could be emails, and people who don&apos;t respect others&apos; time. I also struggle with perfectionism paralysis - sometimes done is better than perfect, and I'm learning to embrace that philosophy.",
               },
               {
                 title: "What people misunderstand about me.",
                 content:
-                  "People often think I&apos;m introverted because I&apos;m thoughtful and deliberate in my responses, but I actually love collaborating and discussing ideas. They might also assume I&apos;m overly serious, but I have a playful side and enjoy creative problem-solving.",
+                  "People often think I'm introverted because I&apos;m thoughtful and deliberate in my responses, but I actually love collaborating and discussing ideas. They might also assume I&apos;m overly serious, but I have a playful side and enjoy creative problem-solving.",
               },
               {
                 title: "How to best communicate with me.",
                 content:
-                  "Be direct and honest - I appreciate straightforward communication. Give me context for decisions and changes. I prefer written communication for complex topics so I can process and respond thoughtfully, but I&apos;m always open to face-to-face discussions for brainstorming.",
+                  "Be direct and honest - I appreciate straightforward communication. Give me context for decisions and changes. I prefer written communication for complex topics so I can process and respond thoughtfully, but I'm always open to face-to-face discussions for brainstorming.",
               },
             ].map((item, index) => (
               <AccordionItem
