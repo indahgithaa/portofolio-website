@@ -14,6 +14,7 @@ import {
   ExternalLink,
   Menu,
   X,
+  Phone,
 } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -201,7 +202,13 @@ export default function Portfolio() {
       image: "/assets/deepgaze.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Flutter", "Provider", "RestAPI", "Tensorflow Lite", "OpenCV"],
+      technologies: [
+        "Flutter",
+        "Provider",
+        "RestAPI",
+        "Tensorflow Lite",
+        "OpenCV",
+      ],
       category: "Mobile App",
     },
     {
@@ -227,7 +234,7 @@ export default function Portfolio() {
     {
       title: "Morie",
       description:
-       "An application designed to prevent and manage baby blues and postpartum depression, offering features such as access to healthcare providers, community support, journaling, mental and physical wellness tips, and self-care tools.",
+        "An application designed to prevent and manage baby blues and postpartum depression, offering features such as access to healthcare providers, community support, journaling, mental and physical wellness tips, and self-care tools.",
       image: "/assets/Morie.png",
       demoUrl: "#",
       githubUrl: "#",
@@ -241,7 +248,16 @@ export default function Portfolio() {
       image: "/assets/TRIPLED.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Python", "EasyOCR", "YOLOv8", "Ultralytics", "ONNX", "WebSocket", "HTML & CSS", "JavaScript"],
+      technologies: [
+        "Python",
+        "EasyOCR",
+        "YOLOv8",
+        "Ultralytics",
+        "ONNX",
+        "WebSocket",
+        "HTML & CSS",
+        "JavaScript",
+      ],
       category: "Website",
     },
     {
@@ -251,7 +267,13 @@ export default function Portfolio() {
       image: "/assets/sarprasku.png",
       demoUrl: "#",
       githubUrl: "#",
-      technologies: ["Typescript", "Next.js", "Tailwind", "Shadcn", "Pocketbase"],
+      technologies: [
+        "Typescript",
+        "Next.js",
+        "Tailwind",
+        "Shadcn",
+        "Pocketbase",
+      ],
       category: "Website",
     },
   ];
@@ -398,9 +420,9 @@ export default function Portfolio() {
             </h2>
 
             <p className="text-lg md:text-xl text-purple-200 max-w-3xl mx-auto leading-relaxed">
-              I&apos;m an undergraduate computer science student based in Malang,
-              Indonesia. I&apos;m passionate about building useful and meaningful
-              technology that can solve real-world problems.
+              I&apos;m an undergraduate computer science student based in
+              Malang, Indonesia. I&apos;m passionate about building useful and
+              meaningful technology that can solve real-world problems.
             </p>
           </div>
 
@@ -466,22 +488,42 @@ export default function Portfolio() {
             <div className="space-y-6">
               <p className="text-lg text-purple-100 leading-relaxed">
                 I&apos;m an undergraduate student majoring in Informatics with
-                current interest in Software Development and AI/ML. I&apos;ve always been
-                driven to contribute to the tech-driven society. I work well in
-                both collaborative and individual environments. As I have a firm
-                desire to grow, I&apos;m always eager to expand my skill set and
-                enjoy making new connections with others. I&apos;m actively on the
-                lookout for new opportunities to get involved in!
+                current interest in Software Development and AI. I&apos;ve
+                always been driven to contribute to the tech-driven society. I
+                work well in both collaborative and individual environments. As
+                I have a firm desire to grow, I&apos;m always eager to expand my
+                skill set and enjoy making new connections with others. I&apos;m
+                actively on the lookout for new opportunities to get involved
+                in!
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <MapPin className="text-purple-400" size={20} />
-                  <span>Malang City, East Java</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="text-purple-400" size={20} />
-                  <span>indahgitha99@gmail.com</span>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-purple-600/50 p-2 rounded-full mt-1">
+                    <svg
+                      className="text-white"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                  </div>
+                  <div>
+                    {/* <p className="text-purple-300 text-sm">Education</p> */}
+                    <p className="text-white font-medium">
+                      Informatics Engineering
+                    </p>
+                    <p className="text-purple-300 text-sm">
+                      University of Brawijaya • 2023-2027 (expected)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -722,6 +764,118 @@ export default function Portfolio() {
                 content={item.content}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Get in Touch Section */}
+      <section id="contact" className="py-20 relative z-10">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">
+            Get in Touch
+          </h2>
+
+          <div className="max-w-4xl mx-auto">
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Contact Information */}
+              <Card className="bg-purple-800/30 border-purple-500/30 backdrop-blur-sm">
+                <CardContent className="p-8 space-y-6">
+                  <h3 className="text-2xl font-semibold text-white mb-6">Contact</h3>
+
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-purple-600/50 p-3 rounded-full">
+                        <Mail className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-purple-300 text-sm">Email</p>
+                        <a
+                          href="mailto:indahgitha99@gmail.com"
+                          className="text-white hover:text-purple-300 transition-colors"
+                        >
+                          indahgithadev@gmail.com
+                        </a>
+                      </div>
+                    </div>
+
+ <div className="flex items-center space-x-4">
+                      <div className="bg-purple-600/50 p-3 rounded-full">
+                        <Phone className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-purple-300 text-sm">GitHub</p>
+                        <a href="#" className="text-white hover:text-purple-300 transition-colors">
+                          +6287863533982
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-purple-600/50 p-3 rounded-full">
+                        <MapPin className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-purple-300 text-sm">Location</p>
+                        <p className="text-white">Malang City, East Java, Indonesia</p>
+                      </div>
+                    </div>
+
+                   
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Quick Contact Form */}
+              <Card className="bg-purple-800/30 border-purple-500/30 backdrop-blur-sm">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
+
+                  <form className="space-y-4">
+                    <div>
+                      <label htmlFor="name" className="block text-purple-300 text-sm mb-2">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        className="w-full px-4 py-3 bg-purple-900/50 border border-purple-500/30 rounded-lg text-white placeholder-purple-400 focus:outline-none focus:border-purple-400 transition-colors"
+                        placeholder="Your name"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="email" className="block text-purple-300 text-sm mb-2">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        className="w-full px-4 py-3 bg-purple-900/50 border border-purple-500/30 rounded-lg text-white placeholder-purple-400 focus:outline-none focus:border-purple-400 transition-colors"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="message" className="block text-purple-300 text-sm mb-2">
+                        Message
+                      </label>
+                      <textarea
+                        id="message"
+                        rows={4}
+                        className="w-full px-4 py-3 bg-purple-900/50 border border-purple-500/30 rounded-lg text-white placeholder-purple-400 focus:outline-none focus:border-purple-400 transition-colors resize-none"
+                        placeholder="Tell me about your project or just say hi!"
+                      />
+                    </div>
+
+                    <Button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white py-3 rounded-lg transition-all transform hover:scale-105">
+                      <Mail className="mr-2" size={20} />
+                      Send Message
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
