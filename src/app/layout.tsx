@@ -11,9 +11,10 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Indah's Portfolio",
+  title: "Putu Indah Githa Cahyani",
+    description: "Personal portfolio of Putu Indah Githa Cahyani, a passionate Computer Science student based in Malang, Indonesia, focusing on building meaningful tech solutions.",
   icons: {
-    icon: "assets/moon.png",
+    icon: "moon.png",
   }
 }
 
