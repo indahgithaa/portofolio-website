@@ -15,6 +15,8 @@ import {
   Menu,
   X,
   Phone,
+  Paintbrush,
+  Paintbrush2,
 } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -22,7 +24,13 @@ import { useState, useEffect } from "react";
 // Add this component before the main Portfolio component
 import { ReactNode } from "react";
 
-function AccordionItem({ title, content }: { title: string; content: ReactNode }) {
+function AccordionItem({
+  title,
+  content,
+}: {
+  title: string;
+  content: ReactNode;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -202,7 +210,8 @@ export default function Portfolio() {
       description:
         "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
       image: "/assets/deepgaze.png",
-      demoUrl: "https://drive.google.com/drive/folders/1pIvm896WlIYQZFlZserVnU7y1naXrSMB",
+      demoUrl:
+        "https://drive.google.com/drive/folders/1pIvm896WlIYQZFlZserVnU7y1naXrSMB",
       githubUrl: "https://github.com/indahgithaa/deep-gaze",
       technologies: [
         "Flutter",
@@ -218,7 +227,8 @@ export default function Portfolio() {
       description:
         "An application that supports people with disabilities in developing skills and finding employment, with features such as mentoring, certification, and job application tools.",
       image: "/assets/includemy.png",
-      demoUrl: "https://drive.google.com/drive/folders/1FQigpUt-fX8Bwsv0SpZP9KDm5KTn0jOr?usp=drive_link",
+      demoUrl:
+        "https://clips.id/demo-includemy-bcc-intern",
       githubUrl: "https://github.com/indahgithaa/includemy",
       technologies: ["Flutter", "GetX", "RestAPI"],
       category: "Mobile App",
@@ -228,7 +238,8 @@ export default function Portfolio() {
       description:
         "An application that helps users learn traditional languages through gamification, with features such as NusaSmart, NusaFriend, NusaLingo, and NusaMaps.",
       image: "/assets/nusastra.png",
-      demoUrl: "https://drive.google.com/drive/folders/1FUvTWiIK2hohRN2ySUms21Zegb1jyEZl?usp=drive_link",
+      demoUrl:
+        "https://clips.id/demo-nusastra-bccgembira",
       githubUrl: "https://github.com/kmdavidds/BCCGembira_Nusastra",
       technologies: ["Flutter", "BLoC", "RestAPI", "OpenAI"],
       category: "Mobile App",
@@ -262,7 +273,15 @@ export default function Portfolio() {
       ],
       category: "Website",
     },
-    
+    {
+      title: "Suarai",
+      description:
+        "Suarai is an app designed to maximize the effectiveness of social campaigns through AI-generated content. It helps users automatically create impactful campaign materials, including slogans, illustrations, and videos.",
+      image: "/assets/suarai.png",
+      demoUrl: "https://drive.google.com/drive/folders/1LGPoIz14X3u5adrlJsCMqcPvLOwxgMKL?usp=sharing",
+      githubUrl: "https://www.figma.com/design/XlVNYuWRrdJNXvDw8oZdzY/Suarai?node-id=24-511&t=7FEEbjqhryapfuoP-0",
+      category: "UI/UX",
+    },
   ];
 
   const categories = ["All", "Website", "Mobile App", "UI/UX"];
@@ -653,15 +672,16 @@ export default function Portfolio() {
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="secondary"
-                        className="bg-purple-600/50 text-white text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
+                    {project.technologies &&
+                      project.technologies.map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="bg-purple-600/50 text-white text-xs"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
                   </div>
 
                   <div className="flex gap-3 pt-2">
@@ -676,7 +696,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                       >
                         <ExternalLink className="mr-2" size={16} />
-                        {project.category === "UI/UX" ? "View Design" : "Demo"}
+                        {project.category === "UI/UX" ? "Prototype" : "Demo"}
                       </a>
                     </Button>
                     <Button
@@ -685,14 +705,25 @@ export default function Portfolio() {
                       className="border-purple-500/50 text-purple-300 hover:bg-purple-700/50 hover:text-white flex-1 bg-transparent"
                       asChild
                     >
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="mr-2" size={16} />
-                        {project.category === "UI/UX" ? "Files" : "Code"}
-                      </a>
+                      {project.category === "UI/UX" ? (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Paintbrush className="mr-2" size={16} />
+                          View Design
+                        </a>
+                      ) : (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="mr-2" size={16} />
+                          Code
+                        </a>
+                      )}
                     </Button>
                   </div>
                 </CardContent>
@@ -733,7 +764,7 @@ export default function Portfolio() {
                 content: [
                   "I really value consistency above all else. I believe that success, whether it’s reaching a goal or overcoming a challenge, comes from staying committed. When a teammate is consistent, it tells me a lot about their character. 💪",
                   "I appreciate teammates I can rely on. That means meeting deadlines, following through on what they say, and if something comes up, communicating openly and honestly.",
-                  "I respect coworkers who are goal-oriented and focused on what really matters. I appreciate it when someone works on the root of a problem, not just quick fixes, and cares more about the process than just the end result. 🙂"
+                  "I respect coworkers who are goal-oriented and focused on what really matters. I appreciate it when someone works on the root of a problem, not just quick fixes, and cares more about the process than just the end result. 🙂",
                 ],
               },
               {
@@ -742,7 +773,7 @@ export default function Portfolio() {
                   "I don’t expect perfect loyalty or constant attention. I know you have your own life, and you’re not a side character in mine. I just hope you value the friendship too. 🙂",
                   "I respect friends who can be real with me. If we can’t be honest with each other, are we really friends?",
                   "I really value friends who are open about what they’re going through. If they’re struggling, I’d rather know or at least be aware of it so I can be there for them. 🤗",
-                  "I appreciate friends who can celebrate each other's wins and still keep a little friendly competition going. It’s uplifting when we push each other to do better in positive ways. 🙌"
+                  "I appreciate friends who can celebrate each other's wins and still keep a little friendly competition going. It’s uplifting when we push each other to do better in positive ways. 🙌",
                 ],
               },
               {
@@ -909,7 +940,7 @@ export default function Portfolio() {
       <footer className="py-12 relative z-10 border-t border-purple-500/20">
         <div className="container mx-auto px-6 text-center">
           <p className="text-purple-300">
-            © 2025 Indah Githa. Made with ❤️ and lots of coffee.
+            © 2025 Indah Githa. Made with ❤️ and a cup of matcha latte.
           </p>
         </div>
       </footer>
