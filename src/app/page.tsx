@@ -726,50 +726,65 @@ export default function Portfolio() {
       {/* Deep Dive Into My Brain Section */}
       <section id="brain" className="py-20 relative z-10 mx-auto">
         <div className="container mx-auto px-6 items-center">
-          <h2 className="text-4xl text-center text-centera font-bold mb-16 bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">
+          <h2 className="text-4xl text-center font-bold mb-16 bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">
             Dive Into My Brain
           </h2>
 
-          <div className="max-w-4xl mx-auto">
+          <ul className="list-disc list-inside space-y-10 text-lg text-white max-w-4xl mx-auto">
             {[
               {
-                title: "How I work.",
-                content:
-                  "I approach every problem with curiosity and systematic thinking. My brain works like a debugger - breaking down complex issues into smaller, manageable pieces. I believe in iterative development, continuous testing, and always keeping the end user in mind.",
+                title: "How I work",
+                content: [
+                  "I really enjoy working when I’m in the flow state, fully focused and making great progress. I love putting my headphones on to tune out distractions and fully focus on the task at hand.",
+                  "My brain works like a debugger, breaking down complex issues into smaller, manageable pieces.",
+                  "I care a lot about making sure everyone on the team feels included. If someone feels left out, I feel that too. I believe that a strong team is built on people feeling heard, valued, and connected.",
+                  "I always try to stay open to different ideas, whether they are small tips or big changes. I like to remind myself that if someone sees things differently, it doesn't mean they are wrong. It could mean there is something I haven't considered yet."
+                ],
               },
               {
-                title: "What I value in teammates.",
-                content:
-                  "I value teammates who are collaborative, communicate openly, and aren't afraid to ask questions. I appreciate people who take ownership of their work, are willing to help others, and bring diverse perspectives to problem-solving.",
+                title: "What I value in teammates",
+                content: [
+                  "I really value consistency above all else. I believe that success, whether it’s reaching a goal or overcoming a challenge, comes from staying committed. When a teammate is consistent, it tells me a lot about their character.",
+                  "I appreciate teammates I can rely on. That means meeting deadlines, following through on what they say, and if something comes up, communicating openly and honestly.",
+                ],
               },
               {
-                title: "What I value in friends.",
-                content:
-                  "Authenticity, loyalty, and a good sense of humor. I cherish friends who challenge me to grow, support me through difficulties, and celebrate successes together. I value deep conversations and shared experiences over surface-level interactions.",
+                title: "What I value in friends",
+                content: [
+                  "I don’t expect perfect loyalty or constant attention. I know you have your own life, and you’re not a side character in mine. I just hope you value the friendship too. 🙂",
+                  "I respect friends who can be real with me. If we can’t be honest with each other, are we really friends?",
+                  "I appreciate friends who challenge me to grow and celebrate with me along the way.",
+                ],
               },
               {
-                title: "What I don't have patience for.",
-                content:
-                  "Micromanagement, unnecessary meetings that could be emails, and people who don&apos;t respect others&apos; time. I also struggle with perfectionism paralysis - sometimes done is better than perfect, and I'm learning to embrace that philosophy.",
+                title: "What people misunderstand about me",
+                content: [
+                  "People sometimes think I’m too serious, but I actually love humor and enjoy being playful. Just send me the meme you found on the internet, I’ll probably laugh way too hard at it. 😆",
+                  "I’m not indecisive. I just like to take my time understanding the full picture before choosing a side. Even when one side seems right, I hold off on making a call until I’ve looked at everything carefully. 🤓",
+                  "I’m an introvert who actually enjoys being social 👋, but only when it feels right. I recharge best on my own, but when I’m around the right people or in a meaningful setting, I genuinely love connecting and having good conversations."
+                ],
               },
               {
-                title: "What people misunderstand about me.",
-                content:
-                  "People often think I'm introverted because I&apos;m thoughtful and deliberate in my responses, but I actually love collaborating and discussing ideas. They might also assume I&apos;m overly serious, but I have a playful side and enjoy creative problem-solving.",
-              },
-              {
-                title: "How to best communicate with me.",
-                content:
-                  "Be direct and honest - I appreciate straightforward communication. Give me context for decisions and changes. I prefer written communication for complex topics so I can process and respond thoughtfully, but I'm always open to face-to-face discussions for brainstorming.",
+                title: "How to best communicate with me",
+                content: [
+                  "Be direct and honest. Clear communication is important to me. 🙂",
+                  "I prefer written communication for complex topics, but I’m happy to brainstorm face-to-face too.",
+                  "I prefer not to jump into a heavy conversation or big project without some heads-up. Giving me at least a day’s notice helps a lot. It allows me to show up fully prepared, both mentally and physically, so I can give it my best effort."
+                ],
               },
             ].map((item, index) => (
-              <AccordionItem
-                key={index}
-                title={item.title}
-                content={item.content}
-              />
+              <li key={index}>
+                <p className="font-semibold text-purple-300 mb-2">
+                  {item.title}
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  {item.content.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
