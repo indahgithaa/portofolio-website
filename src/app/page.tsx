@@ -202,8 +202,8 @@ export default function Portfolio() {
       description:
         "A learning support application for students with speech and motor disabilities using eye movement tracker with client-side image processing, with features such as eye-controlled keyboard, lecture recorder, and interactive reader.",
       image: "/assets/deepgaze.png",
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://drive.google.com/drive/folders/1pIvm896WlIYQZFlZserVnU7y1naXrSMB",
+      githubUrl: "https://github.com/indahgithaa/deep-gaze",
       technologies: [
         "Flutter",
         "Provider",
@@ -218,8 +218,8 @@ export default function Portfolio() {
       description:
         "An application that supports people with disabilities in developing skills and finding employment, with features such as mentoring, certification, and job application tools.",
       image: "/assets/includemy.png",
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://drive.google.com/drive/folders/1FQigpUt-fX8Bwsv0SpZP9KDm5KTn0jOr?usp=drive_link",
+      githubUrl: "https://github.com/indahgithaa/includemy",
       technologies: ["Flutter", "GetX", "RestAPI"],
       category: "Mobile App",
     },
@@ -228,8 +228,8 @@ export default function Portfolio() {
       description:
         "An application that helps users learn traditional languages through gamification, with features such as NusaSmart, NusaFriend, NusaLingo, and NusaMaps.",
       image: "/assets/nusastra.png",
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://drive.google.com/drive/folders/1FUvTWiIK2hohRN2ySUms21Zegb1jyEZl?usp=drive_link",
+      githubUrl: "https://github.com/kmdavidds/BCCGembira_Nusastra",
       technologies: ["Flutter", "BLoC", "RestAPI", "OpenAI"],
       category: "Mobile App",
     },
@@ -238,8 +238,8 @@ export default function Portfolio() {
       description:
         "An application designed to prevent and manage baby blues and postpartum depression, offering features such as access to healthcare providers, community support, journaling, mental and physical wellness tips, and self-care tools.",
       image: "/assets/Morie.png",
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://www.youtube.com/watch?v=grBppu6v8yA",
+      githubUrl: "https://github.com/indahgithaa/morie",
       technologies: ["Flutter", "Firebase"],
       category: "Mobile App",
     },
@@ -248,8 +248,8 @@ export default function Portfolio() {
       description:
         "A smart school pickup solution integrated with IP camera and machine learning. It optimizes traffic flow and enhances efficiency, ensuring a smarter, safer experience for students and parents.",
       image: "/assets/TRIPLED.png",
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://youtu.be/d8fdl8cPQuQ?si=2c576mPflfhEq3Wm",
+      githubUrl: "https://github.com/kmdavidds/gemastik_tripled",
       technologies: [
         "Python",
         "EasyOCR",
@@ -407,7 +407,7 @@ export default function Portfolio() {
             </h2>
 
             <p className="text-lg md:text-xl text-purple-200 max-w-3xl mx-auto leading-relaxed">
-              I&apos;m an undergraduate computer science student based in
+              I&apos;m an undergraduate Computer Science student based in
               Malang, Indonesia. I&apos;m passionate about building useful and
               meaningful technology that can solve real-world problems.
             </p>
@@ -415,19 +415,19 @@ export default function Portfolio() {
 
           <div className="flex justify-center space-x-6 animate-fade-in-up animation-delay-300">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/indahgithaa/"
               className="text-purple-300 hover:text-white transition-colors transform hover:scale-110"
             >
               <Linkedin size={32} />
             </a>
             <a
-              href="#"
+              href="https://github.com/indahgithaa"
               className="text-purple-300 hover:text-white transition-colors transform hover:scale-110"
             >
               <Github size={32} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/indahgithaa"
               className="text-purple-300 hover:text-white transition-colors transform hover:scale-110"
             >
               <Instagram size={32} />
