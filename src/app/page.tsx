@@ -16,7 +16,6 @@ import {
   X,
   Phone,
   Paintbrush,
-  Paintbrush2,
 } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -227,8 +226,7 @@ export default function Portfolio() {
       description:
         "An application that supports people with disabilities in developing skills and finding employment, with features such as mentoring, certification, and job application tools.",
       image: "/assets/includemy.png",
-      demoUrl:
-        "https://clips.id/demo-includemy-bcc-intern",
+      demoUrl: "https://clips.id/demo-includemy-bcc-intern",
       githubUrl: "https://github.com/indahgithaa/includemy",
       technologies: ["Flutter", "GetX", "RestAPI"],
       category: "Mobile App",
@@ -238,8 +236,7 @@ export default function Portfolio() {
       description:
         "An application that helps users learn traditional languages through gamification, with features such as NusaSmart, NusaFriend, NusaLingo, and NusaMaps.",
       image: "/assets/nusastra.png",
-      demoUrl:
-        "https://clips.id/demo-nusastra-bccgembira",
+      demoUrl: "https://clips.id/demo-nusastra-bccgembira",
       githubUrl: "https://github.com/kmdavidds/BCCGembira_Nusastra",
       technologies: ["Flutter", "BLoC", "RestAPI", "OpenAI"],
       category: "Mobile App",
@@ -278,8 +275,10 @@ export default function Portfolio() {
       description:
         "Suarai is an app designed to maximize the effectiveness of social campaigns through AI-generated content. It helps users automatically create impactful campaign materials, including slogans, illustrations, and videos.",
       image: "/assets/suarai.png",
-      demoUrl: "https://drive.google.com/drive/folders/1LGPoIz14X3u5adrlJsCMqcPvLOwxgMKL?usp=sharing",
-      githubUrl: "https://www.figma.com/design/XlVNYuWRrdJNXvDw8oZdzY/Suarai?node-id=24-511&t=7FEEbjqhryapfuoP-0",
+      demoUrl:
+        "https://drive.google.com/drive/folders/1LGPoIz14X3u5adrlJsCMqcPvLOwxgMKL?usp=sharing",
+      githubUrl:
+        "https://www.figma.com/design/XlVNYuWRrdJNXvDw8oZdzY/Suarai?node-id=24-511&t=7FEEbjqhryapfuoP-0",
       category: "UI/UX",
     },
   ];
@@ -358,7 +357,10 @@ export default function Portfolio() {
               >
                 Projects
               </a>
-              <a href="" className="hover:text-purple-300 transition-colors">
+              <a
+                href="#contact"
+                className="hover:text-purple-300 transition-colors"
+              >
                 Contact Me
               </a>
             </div>
@@ -396,7 +398,7 @@ export default function Portfolio() {
                   Projects
                 </button>
                 <button
-                  onClick={() => handleNavClick("")}
+                  onClick={() => handleNavClick("#contact")}
                   className="text-left hover:text-purple-300 transition-colors"
                 >
                   Contact Me
